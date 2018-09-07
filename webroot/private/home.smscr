@@ -1,0 +1,49 @@
+{$= "text/html" @setMimeType $}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {background-color: #{$= "background" "7F7F7F" @tparamGet $};}
+        </style>
+
+    </head>
+    
+    <body>
+        <a href="/scripts/osnovni.smscr">Osnovni.smscr</a>
+        <br>
+        <a href="/scripts/brojPoziva.smscr">brojPoziva.smscr</a>
+        <br>
+        <a href="/scripts/fibonaccih.smscr">fibonaccih.smscr</a>
+        <br>
+        <br>
+        <a href="/ext/HelloWorker">HelloWorker</a>
+        <br>
+        <a href="/ext/CircleWorker">CircleWorker</a>   
+        <br>
+    </body>
+    
+    Sum of two numbers (SumWorker):
+    <form action="/calc"><br>
+        a = <input type="text" name="a"><br>
+        b = <input type="text" name="b"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    Set background color:
+    <form action="/setbgcolor">
+        <select name = "bgcolor">
+            <option value = "FF0000">Red</option>
+            <option value = "FFFFFF">White</option>
+            <option value = "00FF00">Green</option>
+            <option value = "AAAAFF">Blue</option>
+            <option value = "7F7F7F">Gray</option>
+            
+            <input type="submit" value="Submit">
+        </select>   
+    </form>
+    
+    <br>
+    
+
+</html>

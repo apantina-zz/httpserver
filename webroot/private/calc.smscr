@@ -1,0 +1,22 @@
+{$= "text/html" @setMimeType $}
+<html>
+    <head>
+        <title>Zbrajanje</title>
+    </head>
+    <h1>Zbrajanje</h1>
+    <table>
+        <tr>
+            <td>a</td><td>{$="a" 1 @tparamGet$}</td>
+        </tr>
+
+        <tr>
+            <td>b</td><td>{$="b" 1 @tparamGet$}</td>
+        </tr>
+
+        <tr>
+            <td>a+b</td><td>{$="zbroj" 3 @tparamGet$}</td>
+        </tr>
+
+    </table>
+</html>
+
